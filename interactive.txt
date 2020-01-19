@@ -1,0 +1,3 @@
+g++ -std=c++11 o61_mar_c1_traffic.cpp trafficlib.cpp
+
+a.exe

@@ -1,0 +1,40 @@
+Object oriented programming (OOP)
+- OOP , inherit, interface
+
+sysout (and ctrl+space)
+ctrl+slash
+Class,File -> capital letter
+ctrl+shift+F -> Auto format 
+
+7 8 0 -> int
+8l -> long
+7.5f -> float 
+
+7.5 8.0 1e10 -> double 
+true, false -> boolean	
+
+float e = 5.7 -> can't do
+
+Point p1 = new Point(5,1); -> pointer 
+
+String + ? = String
+Double + (int) = Double 
+
+sc.close();
+
+overloading -> 
+public static int sum(int a){
+
+}
+public static int sum(int a,int b){
+	      <------------------>
+	        call signature  
+	
+}
+public static float sum(int a){
+
+}
+can be declared
+
+1.0 == 1 (true)
+

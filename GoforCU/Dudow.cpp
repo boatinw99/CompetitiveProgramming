@@ -1,0 +1,69 @@
+#include<bits/stdc++.h>
+using namespace std ;
+int a[2009][2009],b[2009][2009],c[2009][2009],d[2009][2009],e[2009][2009];
+//a = main , b= -> , c= down , d = real ->,e=down real ;
+main()
+{
+	int m,n,k,i,j,in,count=INT_MAX*-1;
+	scanf("%d %d %d",&m,&n,&k);
+	scanf("%d",&a[0][0]);
+	e[0][0]=0;
+	d[0][0]=a[0][0];
+	b[0][0]=a[0][0];
+	c[0][0]=a[0][0];
+	for(j=1;j<n;j++)
+	{
+		scanf("%d",&in);
+		b[0][j]=b[0][j-1]+in;
+		c[0][j]=in;
+		d[0][j]=b[0][j];
+	}
+	for(i=1;i<m;i++)
+	{
+		scanf("%d",&in);
+		b[i][0]=in;
+		c[i][0]=c[i-1][0]+in;
+		for(j=1;j<n;j++)
+		{
+			scanf("%d",&in);
+			a[i][j]=in;
+			e[i][j]=0;
+			b[i][j]=b[i][j-1]+in;
+			c[i][j]=c[i-1][j]+in;
+		}
+	}
+	//cout << endl;
+	for(i=k-1;i<m;i++)
+	{
+		e[i][0]=c[i][0];
+		if(i-k-1>=0)
+		{
+			e[i][0]-=c[i-k-1][0];
+		}
+		for(j=1;j<n-k;j++)
+		{
+			e[i][j]=e[i][j-1]+c[i][j];
+			if(i-k-1>=0)
+			{
+			e[i][j]-=c[i-k-1][j]+c[i-k-1][j-1];					
+			}
+		}
+	}
+	for(i=1;i<m;i++)
+	{
+		d[i][0]=a[i][0];
+		for(j=1;j<n;j++)
+		{
+			d[i][j]=d[i-1][j-1]+b[i][j];
+		}
+	}
+	for(i=k-1;i<m;i++)
+	{
+		count=max(count,d[i][k-1]);
+		for(j=k;j<n;j++)
+		{
+			count=max(count,d[i][j]-e[i][j-k]);
+		}
+	}
+	printf("%d",count);
+}

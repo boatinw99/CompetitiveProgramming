@@ -1,0 +1,4 @@
+https://www.geeksforgeeks.org/top-algorithms-and-data-structures-for-competitive-programming/#algo4
+https://staff.informatics.buu.ac.th/~seree/888204/discretemath.pdf?fbclid=IwAR2gLtQY7reI10nwTAiDGKna-n8x9VxKna7dMq1ZIgTaBNrKupzyXjJQYps
+https://www.khanacademy.org/computing/computer-science/cryptography
+https://www.hackerearth.com/practice/math/combinatorics/inclusion-exclusion/tutorial/

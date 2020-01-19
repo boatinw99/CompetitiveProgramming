@@ -1,0 +1,6 @@
+https://threads-iiith.quora.com/Solving-Dynamic-Programming-with-Matrix-Exponentiation?fbclid=IwAR0XuiGI4jhS6CDtHh_qJmX12a3M_-Pj0C4y_y1u6ImsJFCpWj9yFLLXD58
+http://codeforces.com/blog/entry/43225
+https://cp-algorithms.com/algebra/binary-exp.html
+https://codeforces.com/blog/entry/61763
+https://codeforces.com/blog/entry/8544
+http://zobayer.blogspot.com/2010/11/matrix-exponentiation.html
