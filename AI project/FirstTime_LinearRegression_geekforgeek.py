@@ -25,10 +25,8 @@ def plot_regression_line(x, y, b):
   
     # predicted response vector 
     y_pred = b[0] + b[1]*x 
-  
     # plotting the regression line 
-    plt.plot(x, y_pred, color = "g") 
-  
+    plt.plot(x, y_pred, color = "r") 
     # putting labels 
     plt.xlabel('x') 
     plt.ylabel('y') 
@@ -38,9 +36,10 @@ def plot_regression_line(x, y, b):
   
 def main(): 
     # observations 
-    x = np.array([0, 1, 2, 3, 4, 5, 6, 7, 8, 9]) 
-    y = np.array([1, 2, 3, 5, 5, 6, 7, 8, 9, 12]) 
-  
+    x = np.array([3.10,3.05,3.00,2.96,2.92,2.87,2.83]) 
+    y = np.array([-1.2,-1.1,-0.967,-0.854,-0.752,-0.533,-0.452]) 
+    #x = np.array([1,2])
+    #y = np.array([2,3])
     # estimating coefficients 
     b = estimate_coef(x, y) 
     print("Estimated coefficients:\nb_0 = {} \nb_1 = {}".format(b[0], b[1])) 

@@ -1,0 +1,8 @@
+ArrayList -> Method
+toString()
+add(index,object)
+get(index)
+set(index, newobject)
+remove(object)
+remove(index)
+indexOf(object)
