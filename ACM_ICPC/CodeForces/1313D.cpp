@@ -51,7 +51,6 @@ int main() {
         int range = idx-preidx ; 
         if(it.se.se==0) {
             int ret = getbit() ;
-           // printf("check %d %d \n",ret);
             bits[it.se.fi] = ret ;
             for(int bit=0;bit<mx;bit++) {
                 if(((1<<ret)&bit)==0) {
@@ -61,7 +60,6 @@ int main() {
                     dp[ptr][(1<<ret)|bit] = max(dp[ptr][(1<<ret)|bit],dp[ptr-1][bit]+(range-1)*cnt[bit]+(cnt[bit]^1)); 
                 }
             }
-            //for(int bit=0;bit<mx;bit++)printf("check %d %d ret%d dp%d pidx %d idx %d\n",ptr,bit,1<<ret,dp[ptr][bit],preidx,idx);
         }
         else {
             int ret = bits[it.se.fi] ; 
@@ -72,7 +70,6 @@ int main() {
                 }
                 else dp[ptr][bit] = max(dp[ptr][bit],dp[ptr-1][bit]+(range)*cnt[bit]);
             } 
-            // for(int bit=0;bit<mx;bit++)printf("check %d %d  ret = %d dp = %d \n",ptr,bit,1<<ret,dp[ptr][bit]);
         }
         preidx = idx ; 
         ptr++ ; 
