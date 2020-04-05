@@ -1,3 +1,4 @@
-
-            //     printf("jjj %d ",it);
-            // }
+{
+        //     break ;
+        // }
+        // cout << r <
