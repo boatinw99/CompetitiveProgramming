@@ -43,12 +43,10 @@ int main() {
             if(x+num>=k) {
                 /// cal some ans  
                 add(ans,dp[x][num]*(num+x+divide(sa,sb))%mod); 
-                // printf("checkans %d %d ||%lld\n",x,num,dp[x][num]);
                 continue ; 
             }
             add(dp[x+1][num],dp[x][num]*sa%mod);
             add(dp[x][num+x],dp[x][num]*sb%mod);
-            // printf("check %lld %lld\n",dp[x+1][num],dp[x][num+x]);
         }
     }
     cout << ans << '\n' ;
