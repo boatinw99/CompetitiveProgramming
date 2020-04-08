@@ -41,7 +41,7 @@ int main() {
     for(int x=0;x<=k;x++) {
         for(int num=0;num<k;num++) {
             if(x+num>=k) {
-                /// cal some ans  
+                /// cal some ans -> use geometric series 
                 add(ans,dp[x][num]*(num+x+divide(sa,sb))%mod); 
                 continue ; 
             }
