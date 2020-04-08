@@ -1,5 +1,7 @@
 /*
-    wrong sol -> 13min 
+    wrong sol -> 13min -> I thought it was wrong but it was not.   
+    -> 20 min 
+    analysis -> not think succinctly enough 
 */
 #include<bits/stdc++.h>
 using namespace std ;
