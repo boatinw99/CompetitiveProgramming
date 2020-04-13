@@ -21,7 +21,8 @@ typedef vector<ll> vl ;
 const ull MOD1 = 1e9+7 , MOD2 = 1e9+9 , MMOD1 = MOD1*MOD1 , MMOD2 = MOD2*MOD2; 
 const ll INF = 1e18 ; 
 const double pi = 3.14159265358979 ; 
-const int N = 1e5+9 , inf = 1e9 , mod = 1e9+7 ; 
+const int N = 1e5+9 , inf = 1e9 ; 
+const int mod = 1e9+7 ;///998244353
 
 
 // rolling hash
