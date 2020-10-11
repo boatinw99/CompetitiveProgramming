@@ -67,5 +67,21 @@ int main() {
     srand(chrono::steady_clock::now().time_since_epoch().count());
     ios::sync_with_stdio(false),cin.tie(0);
     init();
+    int t;  
+    cin >> t ; 
+    while(t--) {
+        int n ;
+        cin >> n ; 
+        int x = n ;
+        vector<pii> v ; 
+        for(int i=n-1;i>=1;i--) {
+            v.emplace_back(x,i);
+            x = ceil(1.0*(x+i)/2);
+        }
+        cout << x << '\n' ;
+        for(auto it:v) {
+            cout << it.fi << " " << it.se << '\n' ;
+        }
+    }
     return 0 ;
 }

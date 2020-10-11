@@ -2,6 +2,7 @@
     // "python.pythonPath": "C:\\Users\\BOAT\\Anaconda3\\envs\\COM_ENG_ESS\\python.exe",
     "files.associations": {
         "iostream": "cpp",
-        "type_traits": "cpp"
+        "type_traits": "cpp",
+        "chrono": "cpp"
     }
 }

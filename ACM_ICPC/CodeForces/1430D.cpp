@@ -56,8 +56,12 @@ ll my_rand() {
     ll b = rand();
     return a*(1ll*RAND_MAX+1)+b ; 
 }
+vector<int> v ; 
+set<int> s;  
 void init() {
     // gen_hashprime();
+    v.clear();
+    s.clear();
 }
 int main() {
     #ifndef ONLINE_JUDGE
@@ -66,6 +70,42 @@ int main() {
     #endif
     srand(chrono::steady_clock::now().time_since_epoch().count());
     ios::sync_with_stdio(false),cin.tie(0);
-    init();
+    int t;  
+    cin >> t ; 
+    while(t--) {
+        init();
+        int n ; 
+        cin >> n ;
+        char c ; 
+        cin >> c;  
+        int x = c-'0'; 
+        int cnt = 1 ; 
+        for(int i=2;i<=n;i++) {
+            cin >> c ; 
+            assert(c=='0'||c=='1');
+            if(c-'0'==x){
+                cnt++;
+            }
+            else v.push_back(cnt),cnt=1,x^=1;
+        }
+        v.push_back(cnt);
+        for(int i=0;i<v.size();i++) {
+            if(v[i]>1)s.insert(i);
+            assert(v[i]>=1);
+        }
+        int ans = 0 ;
+        for(int i=0;i<v.size();i++) {
+            if(!s.empty()) {
+                v[*s.begin()]--;
+                if(v[*s.begin()]==1) {
+                    s.erase(*s.begin());
+                }
+            }
+            else i++;
+            if(s.find(i)!=s.end())s.erase(i);
+            ans++;
+        }
+        cout << ans << '\n' ; 
+    }
     return 0 ;
 }
