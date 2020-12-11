@@ -1,5 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std ;
+#pragma GCC optimize("Ofast")
+#pragma GCC target("avx,avx2,fma") 
 typedef unsigned long long ull ;
 typedef long long ll ; 
 typedef double db ; 
