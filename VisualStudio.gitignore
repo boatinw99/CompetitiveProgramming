@@ -63,7 +63,7 @@
   <link rel="assets" href="https://github.githubassets.com/">
   
 
-  <meta name="request-id" content="FCF7:2CCD:4BFBFE7:64405DD:5FF826F7" data-pjax-transient="true"/><meta name="html-safe-nonce" content="4c769bf2c3086a08ba9766a8b6855e0625d28f796c564218192c73efdc528d2b" data-pjax-transient="true"/><meta name="visitor-payload" content="eyJyZWZlcnJlciI6IiIsInJlcXVlc3RfaWQiOiJGQ0Y3OjJDQ0Q6NEJGQkZFNzo2NDQwNUREOjVGRjgyNkY3IiwidmlzaXRvcl9pZCI6IjUyODc4MDc3NzMyOTc4Nzg3NzUiLCJyZWdpb25fZWRnZSI6ImFwLXNvdXRoZWFzdC0xIiwicmVnaW9uX3JlbmRlciI6ImFwLXNvdXRoZWFzdC0xIn0=" data-pjax-transient="true"/><meta name="visitor-hmac" content="d5a3e3d48239c7af5509659447ced2d4c75afe3f0f078a54ce4764975b616ee9" data-pjax-transient="true"/>
+  <meta name="request-id" content="65E3:12CB:B0E0D10:E952D33:5FF8286B" data-pjax-transient="true"/><meta name="html-safe-nonce" content="4a30a5fb4afd563032ecaa00e31de4a79524c631b95cc3fd5efabc580cb72400" data-pjax-transient="true"/><meta name="visitor-payload" content="eyJyZWZlcnJlciI6IiIsInJlcXVlc3RfaWQiOiI2NUUzOjEyQ0I6QjBFMEQxMDpFOTUyRDMzOjVGRjgyODZCIiwidmlzaXRvcl9pZCI6IjYzNDc4ODk1OTU1NDY4NzE5MTUiLCJyZWdpb25fZWRnZSI6ImFwLXNvdXRoZWFzdC0xIiwicmVnaW9uX3JlbmRlciI6ImFwLXNvdXRoZWFzdC0xIn0=" data-pjax-transient="true"/><meta name="visitor-hmac" content="ab8bcc9a18a31a47553e7a018cbd6e0f8846bb95c7732a1deff9fb433c8680a9" data-pjax-transient="true"/>
 
     <meta name="hovercard-subject-tag" content="repository:1062897" data-pjax-transient>
 
@@ -312,7 +312,7 @@
           spellcheck="false"
           autocomplete="off"
           >
-          <input type="hidden" data-csrf="true" class="js-data-jump-to-suggestions-path-csrf" value="nAuZnX+WjEkW7JGQN4icBBR1N+sHQdxmciqK9VIjJMlaQpDuD1GNpo22THJAisNxUdjjPLMKBd6HBFC4QaYoWw==" />
+          <input type="hidden" data-csrf="true" class="js-data-jump-to-suggestions-path-csrf" value="8FexI4USkAPVQgtXyN5YyBRBSVk9E5BYHqoVkIoMZH43rgGjhqV5lYNuX0CZSpa5K5OmjrU0vmWOsSFeCUOtzg==" />
           <input type="hidden" class="js-site-search-type-field" name="type" >
             <img src="https://github.githubassets.com/images/search-key-slash.svg" alt="" class="mr-2 header-search-key-slash">
 
@@ -547,7 +547,7 @@
         Star
 </span></a>
     <a class="social-count js-social-count" href="/github/gitignore/stargazers"
-      aria-label="112595 users starred this repository">
+      aria-label="112596 users starred this repository">
       113k
     </a>
 
@@ -559,7 +559,7 @@
           Fork
 </a>
       <a href="/github/gitignore/network/members" class="social-count"
-         aria-label="60884 users forked this repository">
+         aria-label="60885 users forked this repository">
         60.9k
       </a>
   </li>
