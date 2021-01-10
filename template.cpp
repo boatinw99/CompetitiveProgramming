@@ -69,5 +69,6 @@ int main() {
     srand(chrono::steady_clock::now().time_since_epoch().count());
     ios::sync_with_stdio(false),cin.tie(0);
     init();
+    cout << "test" << '\n' ; 
     return 0 ;
 }
