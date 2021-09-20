@@ -28,7 +28,7 @@ typedef vector<ll> vl ;
 const ull MOD1 = 1e9+7 , MOD2 = 1e9+9 , MMOD1 = MOD1*MOD1 , MMOD2 = MOD2*MOD2; 
 const ll INF = 1e18 ; 
 const double pi = 3.14159265358979 ; 
-const int N = 1e5+9 , inf = 1e9 ; 
+const int N = 2e5+9 , inf = 1e9 ; 
 const int mod = 1e9+7 ;///998244353
 
 
@@ -62,8 +62,66 @@ ll my_rand() {
     ll b = rand();
     return a*(1ll*RAND_MAX+1)+b ; 
 }
-void init() {
+vector<int> g[N];
+set<pii> s;
+int par[N];
+int d[N];
+bool mark[N];
+void init(int n) {
     // gen_hashprime();
+    s.clear();
+    for(int i=0;i<=n;i++) {
+        g[i].clear();
+        d[i]=0;
+        par[i]=0;
+        mark[i]=0;
+    }
+}
+void dfs(int u, int v) {
+    d[u]=d[v]+1;
+    par[u]=v;
+    s.insert(mp(d[u],u));
+    for(auto it:g[u]) {
+        if(it!=v) {
+            dfs(it,u);
+        }
+    }
+}
+void solve(int n) {
+    d[1]=-1;
+    dfs(1,1);
+    int cntBud = 0 ;
+    int L = 0;
+    bool haveNonBud = 0;
+    while(s.size()!=1) {
+        pii x = *s.rbegin();
+        int depth = x.fi;
+        if(x.fi==1) {
+            haveNonBud=1;
+            L++;
+            s.erase(x);
+            mark[x.se]=1;
+        } 
+        else {
+            cntBud++;
+            int v = par[x.se];
+            for(auto it:g[v]) {
+                if(it!=par[v]&&mark[it]==0) {
+                    L++;
+                    mark[it]=1;
+                    s.erase(mp(d[it],it));
+                }
+            } 
+            s.erase(mp(d[v],v));
+            mark[v]=1;
+        } 
+
+    }
+    int ans = L-cntBud; 
+    if(haveNonBud==0) { 
+        ans=ans+1;
+    }
+    cout << ans << '\n' ;
 }
 int main() {
     #ifndef ONLINE_JUDGE
@@ -72,7 +130,20 @@ int main() {
     #endif
     srand(chrono::steady_clock::now().time_since_epoch().count());
     ios::sync_with_stdio(false),cin.tie(0);
-    init();
-    cout << "test" << '\n' ; 
+    int T ;
+    cin >> T ; 
+    while(T--) {
+        int n ;
+        cin >> n ;
+        init(n);
+        for(int i=1;i<n;i++) {
+            int u,v ;
+            cin >> u >> v ;
+            g[u].eb(v);
+            g[v].eb(u);
+        }
+        solve(n);
+    }
+
     return 0 ;
 }
